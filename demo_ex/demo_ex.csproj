@@ -87,6 +87,9 @@
     <Compile Include="user.Designer.cs">
       <DependentUpon>user.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="sign_up.resx">
+      <DependentUpon>sign_up.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sign_in.resx">
       <DependentUpon>sign_in.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,15 +125,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

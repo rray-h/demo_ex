@@ -9,7 +9,7 @@ namespace demo_ex
 {
     internal class db_connect_class
     {
-        SqlConnection sqlconnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
+        SqlConnection sqlconnection = new SqlConnection(@"Data Source=DESKTOP-NJ94H8V;Initial Catalog=master;Integrated Security=True");
 
 
         public void openConnection()
@@ -25,7 +25,7 @@ namespace demo_ex
         {
             if(sqlconnection.State == System.Data.ConnectionState.Open)
             {
-                sqlconnection.Open();
+                sqlconnection.Close();
             }
         }
 

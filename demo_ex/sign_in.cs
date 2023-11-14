@@ -31,6 +31,9 @@ namespace demo_ex
             textBox2.MaxLength = 50;
 
             button1.Text = "Авторизоваться";
+            label1.Text = "Логин";
+            label2.Text = "Пароль";
+            linkLabel1.Text = "Регистрация";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,6 +64,12 @@ namespace demo_ex
             }
         
         
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            sign_up sign_Up = new sign_up();
+            sign_Up.Show();
         }
     }
 }
