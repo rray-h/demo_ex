@@ -68,8 +68,9 @@ namespace demo_ex
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            sign_up sign_Up = new sign_up();
-            sign_Up.Show();
+            this.Hide();
+            sign_up sgu = new sign_up();
+            sgu.Show();
         }
     }
 }
